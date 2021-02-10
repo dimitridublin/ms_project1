@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Condensed&display=swap');
+
+/* header styling */
+#btflogo {
+    margin-left: 5px;
+    margin-top: 5px;
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+    border: 1px solid black;
+    background-color: white;
+
+}
+
+#logofont {
+    font-family: Roboto;
+    font: black;
+    font-size: large;
+    letter-spacing: 5px;
+}
+
