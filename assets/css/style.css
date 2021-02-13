@@ -12,9 +12,18 @@ header {
     font-family: Lato;
 }
 
+/* hero image styling */
+.hero-image {
+  background-image: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png");
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 
 /* btflogo styling */
-div#btflogo {
+#btflogo {
     margin-left: 10px;
     margin-top: 10px;
     float: left;
@@ -52,4 +61,35 @@ div#btflogo {
 
 .active {
     color: #aaa;
+}
+
+#hero-image-text {
+    font-size: 120%;
+    color: #f00;
+    letter-spacing: 4px;
+    text-align: center;
+    background-color: rgba(170, 170, 170, .7);
+    margin-left: 10px;
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+    position: absolute;
+
+}
+
+/* Join Now button styling */
+
+#join-button a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #009900;
+}
+
+#join-button a:hover {
+    color: #aaa;
+}
+
+#about-btf p, h2 {
+    font-family: Roboto;
+    color: #f00;
 }
