@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
 
 /* reseting defaults */
 * {
@@ -89,7 +89,44 @@ header {
     color: #aaa;
 }
 
-#about-btf p, h2 {
-    font-family: Roboto;
+.homepage h2 {
+    font-family: Lato;
     color: #f00;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.homepage p {
+    font-family: Roboto;
+    margin-bottom: 5px;
+}
+
+.facilities-home {
+    display: inline-block;
+}
+
+.facilities-home img {
+    width: 330px;
+    height: 320px;
+    overflow: hidden;
+}
+
+footer{
+    height: 150px;
+}
+
+.social-networks{
+    text-align: center;
+
+}
+
+.social-networks li{
+    display: inline;
+}
+
+.social-networks i{
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #777777;
 }
