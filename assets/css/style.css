@@ -9,16 +9,18 @@
 
 /* header styling */
 header {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
 }
 
-/* hero image styling */
+/* hero image styling, image taken from CI tutorial "Love-Running" as antivirus was blocking any non-imported image */
 .hero-image {
   background-image: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png");
-  min-height: 380px;
+  height: 340px;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 
 }
 
@@ -41,6 +43,7 @@ header {
     float: right;
  }
 
+
  #navigation ul {
      float: right;     
  }
@@ -48,6 +51,7 @@ header {
 #navigation li {
     display: inline-block;
     margin-right: 20px;
+    font-weight: bold;
 }
 
 #navigation a {
@@ -63,70 +67,99 @@ header {
     color: #aaa;
 }
 
+/* hero-image-text styling */
+ 
 #hero-image-text {
     font-size: 120%;
     color: #f00;
+    font-weight: bold;
     letter-spacing: 4px;
     text-align: center;
-    background-color: rgba(170, 170, 170, .7);
-    margin-left: 10px;
-    margin-top: 10px;
+    background-color: rgba(170, 170, 170, .7); /* the #aaa colour equivalent */
+    margin-left: 350px;
+    margin-top: 200px;
+    padding: 5px;
     width: auto;
     height: auto;
     position: absolute;
 
 }
 
+#hero-image-text h3 {
+    font-style: italic;
+}
+
 /* Join Now button styling */
+
+#join-button {
+    text-align: center;
+    letter-spacing: 4px;
+    height: 35px;
+    width: 200px;
+    margin-left: 400px;
+    margin-top: 280px;
+    background-color: #aaa;
+    position: absolute;
+
+}
 
 #join-button a {
     text-decoration: none;
-    color: #fff;
-    background-color: #009900;
+    color: #f00;
+    font-weight: bold;
+    font-family: Lato, sans-serif;
+    font-size: 120%;
 }
 
 #join-button a:hover {
-    color: #aaa;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .homepage h2 {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     color: #f00;
     margin-top: 15px;
     margin-bottom: 10px;
 }
 
 .homepage p {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     margin-bottom: 5px;
 }
 
 .facilities-home {
     display: inline-block;
+    width: 100%;
 }
 
 .facilities-home img {
-    width: 330px;
-    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+    height: 240px;
+    float: left;
     overflow: hidden;
 }
+
 
 footer{
     height: 150px;
 }
 
-.social-networks{
+.social-media {
     text-align: center;
 
 }
 
-.social-networks li{
+.social-media li {
     display: inline;
 }
 
-.social-networks i{
+.social-media i {
     font-size: 160%;
     margin: 1%;
     padding: 5%;
-    color: #777777;
+    color: #f00;
 }
