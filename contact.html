@@ -57,9 +57,12 @@
         <input id="email" type="email" name="email" required/>
         <label for="telephone-number">Telephone</label>
         <input id="telephone-number" type="text" name="telephone-number" required/>
-        <input id="consent" type="checkbox" required>
+        <label for="query">Message</label>
+        <textarea placeholder="Enter your query" rows="10" cols="30" id="query" name="query"></textarea>
+        <input id="consent" type="checkbox" name="consent" value="yes" required>
         <label for="consent">I consent to have my data used as outlined in the Privacy Policy</label>
-        <button>SEND</button>
+        <input type="submit" value="SEND" class="submit-button">
+        <input type="reset" value="Reset Form">
 
     </form>
 </section>
