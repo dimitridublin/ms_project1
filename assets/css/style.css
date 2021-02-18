@@ -33,7 +33,7 @@ header {
     height: auto;
  }
 
- /* navigation styling */
+  /* navigation styling */
  #navigation {
     margin-right: 20px;
     margin-top: 30px;
@@ -116,6 +116,8 @@ header {
     font-weight: bold;
 }
 
+/* main homepage text styling */
+
 .homepage h2 {
     font-family: Lato, sans-serif;
     color: #f00;
@@ -141,13 +143,26 @@ header {
     height: 240px;
     float: left;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 
 
-footer{
+footer {
     height: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
 }
+
+#upper-footer div {
+    display: inline-block;
+    width: 33%;
+    font-family: Lato, sans-serif;
+    color: #f00;
+    text-align: center;
+}
+
 
 .social-media {
     text-align: center;
@@ -163,6 +178,49 @@ footer{
     margin: 1%;
     padding: 5%;
     color: #f00;
+}
+
+
+#lower-footer div {
+    width: 66%;
+    display: inline-block;
+}
+
+ /* footer navigation styling */
+ #navigation-footer {
+    margin-right: 20px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    list-style-type: none;
+    float: left;
+ }
+
+
+ #navigation-footer ul {
+     float: right;     
+ }
+
+#navigation-footer li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#navigation-footer a {
+    text-decoration: none;
+    color: #f00;
+}
+
+#navigation-footer a:hover {
+    color: #aaa;
+}
+
+#navigation-footer .active {
+    color: #aaa;
+}
+
+#iframe-div {
+    width: 33%;
+    display: inline-block;
 }
 
 .submit-button {
