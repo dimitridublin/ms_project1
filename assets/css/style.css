@@ -7,42 +7,43 @@
     border: 0;
 }
 
-/* header styling */
-header {
+/* body styling, Lato font to be used across body unless where Roboto is specified */
+body {
     font-family: Lato, sans-serif;
+    min-height: 100vh;
+    
 }
 
-/* hero image styling, image taken from CI tutorial "Love-Running" as antivirus was blocking any non-imported image */
+/* hero image styling, image taken from CI tutorial "Love-Running" as my antivirus was blocking use of any background 
+image from assets file  */
 .hero-image {
   background-image: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png"); 
-  height: 340px;
-  width: 100%;
+  height: 50vh;
+  width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
 }
 
 /* btflogo styling */
 #btflogo {
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
     float: left;
-    width: auto;
-    height: auto;
+    width: 5vw;
+    height: 5vw;
  }
 
-  /* navigation styling */
+  /* navigation menu styling */
  #navigation {
-    margin-right: 20px;
-    margin-top: 30px;
-    font-size: 120%;
-    letter-spacing: 3px;
+    margin-right: 1vw;
+    margin-top: 1vw;
+    font-size: 130%;
+    letter-spacing: 0.2vw;
     list-style-type: none;
     float: right;
  }
-
 
  #navigation ul {
      float: right;     
@@ -50,7 +51,7 @@ header {
 
 #navigation li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 2vw;
     font-weight: bold;
 }
 
@@ -60,32 +61,33 @@ header {
 }
 
 #navigation a:hover {
-    color: #aaa;
+    color: #ffffff;
 }
 
 #navigation .active {
-    color: #aaa;
+    color: #ffffff;
 }
 
-/* hero-image-text styling */
+/* hero-image-internal-container styling */
  
-#hero-image-text {
+.hero-image-internal-container {
     font-size: 120%;
     color: #f00;
     font-weight: bold;
-    letter-spacing: 4px;
+    letter-spacing: 0.5vw;
     text-align: center;
-    background-color: rgba(170, 170, 170, .7); /* the #aaa colour equivalent */
-    margin-left: 350px;
-    margin-top: 200px;
-    padding: 5px;
+    background-color: rgba(170, 170, 170, .6); /* the #aaa colour equivalent in rgba */
+    margin-left: 18vw;
+    margin-right: 18vw;
+    margin-top: 16vw;
+    padding: 0.2vw;
     width: auto;
     height: auto;
     position: absolute;
 
 }
 
-#hero-image-text h3 {
+.hero-image-internal-container h3 {
     font-style: italic;
 }
 
@@ -93,11 +95,13 @@ header {
 
 #join-button {
     text-align: center;
-    letter-spacing: 4px;
-    height: 35px;
-    width: 200px;
-    margin-left: 400px;
-    margin-top: 280px;
+    letter-spacing: 0.3vw;
+    height: auto;
+    width: auto;
+    padding: 0.5vw;
+    margin-left: 40vw;
+    margin-right: 40vw;
+    margin-top: 21.2vw;
     background-color: #aaa;
     position: absolute;
 
@@ -107,7 +111,6 @@ header {
     text-decoration: none;
     color: #f00;
     font-weight: bold;
-    font-family: Lato, sans-serif;
     font-size: 120%;
 }
 
@@ -116,36 +119,37 @@ header {
     font-weight: bold;
 }
 
-/* main homepage text styling */
+/* homepage text styling */
 
 .homepage h2 {
-    font-family: Lato, sans-serif;
     color: #f00;
     margin-top: 15px;
     margin-bottom: 10px;
+    margin-left: 0.5vw;
 }
 
 .homepage p {
-    font-family: Roboto, sans-serif;
     margin-bottom: 5px;
+    margin-left: 0.5vw;
+    margin-right: 1vw;
 }
 
-.facilities-home {
+
+.homepage-facilities-img-container {
     display: inline-block;
-    width: 100%;
+    width: 100vw;
 }
 
-.facilities-home img {
+.homepage-facilities-img-container img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 25%;
-    height: 240px;
+    width: 25vw;
+    height: 30vh;
     float: left;
     overflow: hidden;
     margin-bottom: 10px;
 }
-
 
 
 footer {
@@ -153,12 +157,12 @@ footer {
     margin-top: 50px;
     margin-bottom: 50px;
     padding-top: 50px;
+    font-family: Lato, sans-serif;
 }
 
 #upper-footer div {
     display: inline-block;
     width: 33%;
-    font-family: Lato, sans-serif;
     color: #f00;
     text-align: center;
 }
@@ -219,7 +223,6 @@ footer {
     color: #aaa;
 }
 footer h5 {
-    font-family: Lato, sans-serif;
     color:#f00;
     text-align: center;
     font-weight: normal;
@@ -229,6 +232,17 @@ footer h5 {
     font-weight: bold;
     color: #f00;
     background-color: #aaa;
-    font-family: Lato, sans-serif;
     letter-spacing: 2px;
+}
+
+.submit-button:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+input[type="reset"] {
+    color: #f00;
+    background-color: #aaa;
+
+
 }
