@@ -7,22 +7,21 @@
     border: 0;
 }
 
-/* body styling, Lato font to be used across body unless where Roboto is specified */
+/* body styling, Lato font to be used across website unless where Roboto is specified instead */
 body {
-    font-family: Lato, sans-serif;
+    font-family: "Lato", "Verdana", sans-serif;
     min-height: 100vh;
     
 }
 
-/* hero image styling, image taken from CI tutorial "Love-Running" as my antivirus was blocking use of any background 
-image from assets file  */
 .hero-image {
-  background-image: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png"); 
+  background-image: url("/assets/images/bruce-mars-ZXq7xoo98b0-unsplash.jpg"); 
+  background-color: black;
   height: 50vh;
   width: 100vw;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   position: relative;
 }
 
@@ -31,8 +30,6 @@ image from assets file  */
     margin-left: 0.5vw;
     margin-top: 0.5vw;
     float: left;
-    width: 5vw;
-    height: 5vw;
  }
 
   /* navigation menu styling */
@@ -94,13 +91,13 @@ image from assets file  */
 /* Join Now button styling */
 
 #join-button {
+    height: 30px;
+    width: 150px;
     text-align: center;
     letter-spacing: 0.3vw;
-    height: auto;
-    width: auto;
     padding: 0.5vw;
-    margin-left: 40vw;
-    margin-right: 40vw;
+    margin-left: 30vw;
+    margin-right: 60vw;
     margin-top: 21.2vw;
     background-color: #aaa;
     position: absolute;
@@ -151,19 +148,34 @@ image from assets file  */
     margin-bottom: 10px;
 }
 
+table {
+    border: 2px double #aaa;
+}
+
+table th {
+    border: 2px double #aaa;
+    color: #f00;
+}
+
+table td {
+    border: 2px double #aaa;
+}
+
 
 footer {
-    height: 150px;
+    height: 10vh;
+    width: 100vw;
     margin-top: 50px;
     margin-bottom: 50px;
     padding-top: 50px;
-    font-family: Lato, sans-serif;
+    font-family: "Lato", "Verdana", sans-serif;
 }
 
-#upper-footer div {
+.upper-footer div {
     display: inline-block;
-    width: 33%;
+    width: 33vw;
     color: #f00;
+    vertical-align: middle;
     text-align: center;
 }
 
@@ -178,21 +190,22 @@ footer {
 }
 
 .social-media i {
-    font-size: 160%;
+    font-size: xx-large;
     margin: 1%;
     padding: 5%;
     color: #f00;
 }
 
 
-#lower-footer div {
-    width: 49.5%;
+.lower-footer div {
+    width: 49.5vw;
     display: inline-block;
+    vertical-align: middle;
 }
 
  /* footer navigation styling */
  #navigation-footer {
-    margin-left: 40px;
+    margin-left: 2vw;
     margin-top: 30px;
     margin-bottom: 50px;
     letter-spacing: 2px;
@@ -222,6 +235,8 @@ footer {
 #navigation-footer .active {
     color: #aaa;
 }
+
+
 footer h5 {
     color:#f00;
     text-align: center;
