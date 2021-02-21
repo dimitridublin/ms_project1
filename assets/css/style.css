@@ -15,7 +15,8 @@ body {
 }
 
 .hero-image {
-  background-image: url("/assets/images/bruce-mars-ZXq7xoo98b0-unsplash.jpg"); 
+  /* Photo by Mor Shani on Unsplash */
+  background-image: url("/assets/images/mor-shani-li4dxZ0KYRw-unsplash.jpg"); 
   background-color: black;
   height: 50vh;
   width: 100vw;
@@ -73,7 +74,7 @@ body {
     font-weight: bold;
     letter-spacing: 0.5vw;
     text-align: center;
-    background-color: rgba(170, 170, 170, .6); /* the #aaa colour equivalent in rgba */
+    background-color: rgba(170, 170, 170, .8); /* the #aaa colour equivalent in rgba */
     margin-left: 18vw;
     margin-right: 18vw;
     margin-top: 16vw;
@@ -138,9 +139,6 @@ body {
 }
 
 .homepage-facilities-img-container img {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     width: 25vw;
     height: 30vh;
     float: left;
