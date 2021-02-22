@@ -8,21 +8,24 @@
 }
 
 /* body styling, Lato font to be used across website unless where Roboto is specified instead */
+
 body {
     font-family: "Lato", "Verdana", sans-serif;
-    min-height: 100vh;
-    
+    min-height: 100vh;    
 }
 
+/* hero-image styling */
+
 .hero-image {
-  /* Photo by Mor Shani on Unsplash */
+  /* Photo by Mor Shani on Unsplash, photo deemed most appropriate to use as it also resembles the view of Dublin Bay 
+  from Booterstown  */
   background-image: url("/assets/images/mor-shani-li4dxZ0KYRw-unsplash.jpg"); 
   background-color: black;
   height: 50vh;
   width: 100vw;
-   background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   position: relative;
 }
 
@@ -33,7 +36,7 @@ body {
     float: left;
  }
 
-  /* navigation menu styling */
+  /* top navigation menu styling */
  #navigation {
     margin-right: 1vw;
     margin-top: 1vw;
@@ -117,7 +120,7 @@ body {
     font-weight: bold;
 }
 
-/* homepage text styling */
+/* homepage/main section on each page styling */
 
 .homepage h2 {
     color: #f00;
@@ -143,8 +146,10 @@ body {
     height: 30vh;
     float: left;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
+
+/* classes schedule page table styling */
 
 table {
     border: 2px double #aaa;
@@ -159,6 +164,28 @@ table td {
     border: 2px double #aaa;
 }
 
+/* contact page query form styling */
+
+.submit-button {
+    font-weight: bold;
+    color: #f00;
+    background-color: #aaa;
+    letter-spacing: 2px;
+}
+
+.submit-button:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+input[type="reset"] {
+    color: #f00;
+    background-color: #aaa;
+
+
+}
+
+/* footer styling */
 
 footer {
     height: 10vh;
@@ -166,7 +193,6 @@ footer {
     margin-top: 50px;
     margin-bottom: 50px;
     padding-top: 50px;
-    font-family: "Lato", "Verdana", sans-serif;
 }
 
 .upper-footer div {
@@ -205,7 +231,7 @@ footer {
  #navigation-footer {
     margin-left: 2vw;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     letter-spacing: 2px;
     list-style-type: none;
     float: left;
@@ -234,6 +260,11 @@ footer {
     color: #aaa;
 }
 
+.footer-bottom {
+    margin-bottom: 10px;
+    float: left;
+}
+
 
 footer h5 {
     color:#f00;
@@ -241,21 +272,4 @@ footer h5 {
     font-weight: normal;
 }
 
-.submit-button {
-    font-weight: bold;
-    color: #f00;
-    background-color: #aaa;
-    letter-spacing: 2px;
-}
 
-.submit-button:hover {
-    color: #ffffff;
-    font-weight: bold;
-}
-
-input[type="reset"] {
-    color: #f00;
-    background-color: #aaa;
-
-
-}
