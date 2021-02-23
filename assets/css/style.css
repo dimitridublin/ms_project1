@@ -19,7 +19,7 @@ body {
 .hero-image {
   /* Photo by Mor Shani on Unsplash, photo deemed most appropriate to use as it also resembles the view of Dublin Bay 
   from Booterstown  */
-  background-image: url("/assets/images/mor-shani-li4dxZ0KYRw-unsplash.jpg"); 
+  background-image: url("../images/mor-shani-li4dxZ0KYRw-unsplash.jpg"); 
   background-color: black;
   height: 50vh;
   width: 100vw;
