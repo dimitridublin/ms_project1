@@ -7,11 +7,13 @@
     border: 0;
 }
 
-/* body styling, Lato font to be used across website unless where Roboto is specified instead */
+/* body styling, Roboto font to be used for top navigation and headings, Lato font to be used for footer navigation
+and text */
 
 body {
-    font-family: "Lato", "Verdana", sans-serif;
-    min-height: 100vh;    
+    font-family: "Lato", "Verdana", sans-serif;  
+    overflow-x: hidden;
+
 }
 
 /* hero-image styling */
@@ -41,7 +43,6 @@ body {
     margin-right: 1vw;
     margin-top: 1vw;
     font-size: 130%;
-    letter-spacing: 0.2vw;
     list-style-type: none;
     float: right;
  }
@@ -53,7 +54,9 @@ body {
 #navigation li {
     display: inline-block;
     margin-right: 2vw;
+    font-family: "Roboto", "Verdana", sans-serif;
     font-weight: bold;
+    letter-spacing: 0.2vw;
 }
 
 #navigation a {
@@ -74,17 +77,20 @@ body {
 .hero-image-internal-container {
     font-size: 120%;
     color: #f00;
+    font-family: "Roboto", "Verdana", sans-serif;
     font-weight: bold;
     letter-spacing: 0.5vw;
     text-align: center;
     background-color: rgba(170, 170, 170, .8); /* the #aaa colour equivalent in rgba */
-    margin-left: 18vw;
-    margin-right: 18vw;
-    margin-top: 16vw;
     padding: 0.2vw;
     width: auto;
     height: auto;
     position: absolute;
+    bottom: 3vw;
+    left: 18vw;
+    right: 18vw;
+    margin: 0 auto;
+
 
 }
 
@@ -96,15 +102,16 @@ body {
 
 #join-button {
     height: 30px;
-    width: 150px;
+    width: 130px;
     text-align: center;
+    font-family: "Roboto", "Verdana", sans-serif;
     letter-spacing: 0.3vw;
     padding: 0.5vw;
-    margin-left: 30vw;
-    margin-right: 60vw;
-    margin-top: 21.2vw;
     background-color: #aaa;
     position: absolute;
+    bottom: 0.4vw;
+    left: 45vw;
+    right: 45vw;
 
 }
 
@@ -122,7 +129,13 @@ body {
 
 /* homepage/main section on each page styling */
 
+.homepage {
+  height: 50vh;
+  width: 100vw;
+}
+
 .homepage h2 {
+    font-family: "Roboto", "Verdana", sans-serif;
     color: #f00;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -144,11 +157,56 @@ body {
 
 .homepage-facilities-img-container img {
     width: 25vw;
-    height: 30vh;
+    height: 45vh;
     float: left;
     overflow: hidden;
     margin-top: 10px;
 }
+
+/* membership page table styling */
+#standard-membership {
+    border: 2px solid #aaa;
+    width: 40vw;
+    height: 25vw;
+    border-radius: 5%;
+    float: left;
+    margin-left: 5vw;
+    padding: 1vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+#gold-membership {
+    border: 2px solid gold;
+    width: 40vw;
+    height: 25vw;
+    border-radius: 5%;
+    float: right;
+    margin-right: 5vw;
+    padding: 1vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+#gold-membership h3 {
+    color: gold;
+}
+
+#pay-as-you-go {
+    clear: both;
+    margin: 0 auto;
+    width: 80vw;
+    border-radius: 5%;
+    padding: 2px;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: #aaa;
+    color: #f00;
+    font-weight: bold;
+}
+
 
 /* classes schedule page table styling */
 
@@ -189,11 +247,17 @@ input[type="reset"] {
 /* footer styling */
 
 footer {
-    height: 10vh;
+    clear: both;
     width: 100vw;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 10px;
     padding-top: 50px;
+}
+
+.footer-background {
+    background-color: rgba(170, 170, 170, .5); /* the #aaa colour equivalent in rgba */
+    margin-top: 50px;
+    
 }
 
 .upper-footer div {
@@ -202,6 +266,7 @@ footer {
     color: #f00;
     vertical-align: middle;
     text-align: center;
+    margin-top: 10px;
 }
 
 
@@ -225,7 +290,8 @@ footer {
 .lower-footer div {
     width: 49.5vw;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: middle; 
+
 }
 
  /* footer navigation styling */
@@ -263,7 +329,6 @@ footer {
 
 .footer-bottom {
     margin-bottom: 10px;
-    float: left;
 }
 
 
