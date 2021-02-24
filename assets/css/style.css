@@ -224,6 +224,17 @@ table td {
 }
 
 /* contact page query form styling */
+.gallery-photos {
+    line-height: 0px;
+    column-count: 4;
+    column-gap: 0px;
+}
+
+.gallery-photos img {
+    width: 100%;
+}
+
+/* contact page query form styling */
 
 .submit-button {
     font-weight: bold;
