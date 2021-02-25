@@ -251,12 +251,9 @@ table td {
 input[type="reset"] {
     color: #f00;
     background-color: #aaa;
-
-
 }
 
 /* footer styling */
-
 footer {
     clear: both;
     width: 100vw;
@@ -267,8 +264,7 @@ footer {
 
 .footer-background {
     background-color: rgba(170, 170, 170, .5); /* the #aaa colour equivalent in rgba */
-    margin-top: 10px;
-    
+    margin-top: 10px;  
 }
 
 .upper-footer div {
@@ -278,6 +274,7 @@ footer {
     vertical-align: middle;
     text-align: center;
     margin-top: 10px;
+    margin-right: 2px;
 }
 
 
@@ -350,4 +347,58 @@ footer h5 {
     font-weight: normal;
 }
 
+/* site responsiveness for tablets */
+@media screen and (max-width: 1200px) {
+    .hero-image {
+        height: 400px;
+    }
 
+    .hide-image-1 {
+        display: none;
+    }
+
+    .homepage-facilities-img-container {
+        width: 100%
+    }
+
+    .homepage-facilities-img-container img {
+        width: 33%;
+    }
+}
+
+/* site responsiveness for mobiles */
+@media screen and (max-width: 943px) {
+    #navigation {
+        clear: left;
+        float: left;
+    }
+
+    .hero-image-internal-container {
+        clear: left;
+        float: left;
+        font-size: 80%;
+    }
+
+    button {
+        clear: left;
+        float: left;
+        font-size: 80%;
+        margin: auto;
+    }
+
+    .hide-image-1 {
+        display: none;
+    }
+
+    .hide-image-2 {
+        display: none;
+    }
+
+    .homepage-facilities-img-container {
+        width: 100%
+    }
+
+    .homepage-facilities-img-container img {
+        width: 50%;
+    }
+}
