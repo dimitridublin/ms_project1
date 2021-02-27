@@ -14,6 +14,10 @@ body {
     overflow-x: hidden;
 }
 
+.page-background {
+    background-color: #eee6ff;
+}
+
 /* hero-image styling */
 .hero-image {
   /* Photo by Mor Shani on Unsplash, photo deemed most appropriate to use as it also resembles the view of Dublin Bay 
@@ -62,11 +66,12 @@ body {
 
 #navigation a:hover {
     color: #aaa;
+    border-bottom: 1px solid #aaa;
 }
 
 #navigation .active {
     color: #f00;
-    font-weight: bold;
+    border-bottom: 1px solid #f00;
 }
 
 /* hero-image-internal-container styling */
@@ -118,13 +123,13 @@ body {
     font-weight: bold;
 }
 
-/* homepage styling */
-.homepage {
-  width: 100%;
-  clear: both;
+.page-background {
+    width: 100%;
+    background-color: #eee6ff;
 }
 
-.homepage h2 {
+/* homepage styling */
+.homepage h2, .membership-page h2, .classesschedule-page h2, .gallery-page h2, .contact-page h2 {
     font-family: "Roboto", "Verdana", sans-serif;
     color: #f00;
     margin-top: 15px;
@@ -132,7 +137,7 @@ body {
     margin-left: 5px; 
 }
 
-.homepage p {
+.homepage p, .membership-page p, .classesschedule-page p, .contact-page p {
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
@@ -154,7 +159,7 @@ body {
 
 /* membership page table styling */
 #standard-membership {
-    border: 2px solid #aaa;
+    border: 2px solid black;
     width: 40vw;
     height: 25vw;
     border-radius: 5%;
@@ -163,11 +168,10 @@ body {
     padding: 1vw;
     margin-top: 40px;
     margin-bottom: 40px;
-    
 }
 
 #gold-membership {
-    border: 2px solid gold;
+    border: 2px solid #664d00;
     width: 40vw;
     height: 25vw;
     border-radius: 5%;
@@ -180,7 +184,7 @@ body {
 }
 
 #gold-membership h3 {
-    color: gold;
+    color: #664d00;
 }
 
 #pay-as-you-go {
@@ -198,30 +202,31 @@ body {
 
 
 /* classes schedule page table styling */
-
 table {
-    border: 2px double #aaa;
+    border: 2px double black;
+    margin-top: 20px;
+    margin-left: 5px;
 }
 
 table th {
-    border: 2px double #aaa;
+    border: 2px double black;
+    text-align: center;
+    font-size: 130%;
     color: #f00;
+    background-color: #aaa;
+    width: 100px;
+    padding: 10px;
 }
 
 table td {
-    border: 2px double #aaa;
+    border: 2px double black;
+    text-align: center;
+    font-size: 130%;
+    width: 50px;
+    padding: 20px;
 }
 
 /* gallery page styling */
-.gallery-page-style h2 {
-    font-family: "Roboto", "Verdana", sans-serif;
-    color: #f00;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    margin-left: 5px; 
-
-}
-
 .gallery-photos {
     clear: both;
     line-height: 0px;
@@ -234,13 +239,71 @@ table td {
     height: 250px;
 }
 
+/* contact page styling */
+.contact-page {
+  width: 100%;
+}
+
+#contact-intro {
+    clear: both;
+    margin: 0 auto;
+    width: 80vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 2px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #f00;
+    background-color: #aaa;
+    font-weight: bold;
+}
+
 /* contact page query form styling */
+.query-form {
+    font-family: "Lato", "Verdana", sans-serif;
+    color: #f00;
+    font-weight: bold;
+    width: 500px;
+    margin-left: 10px;
+}
+
+.query-details {
+    width: 100%;
+    height: 25px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.query-message {
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.query-consent {
+    margin-bottom: 20px;
+}
+
+.private-policy {
+    color: #f00;
+}
+
+.private-policy:hover {
+    color: #aaa;
+}
 
 .submit-button {
     font-weight: bold;
+    font-size: 120%;
     color: #f00;
     background-color: #aaa;
     letter-spacing: 2px;
+    width: 150px;
+    padding: 5px;
+    margin-right: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
 }
 
 .submit-button:hover {
@@ -248,23 +311,17 @@ table td {
     font-weight: bold;
 }
 
-input[type="reset"] {
-    color: #f00;
-    background-color: #aaa;
-}
-
 /* footer styling */
 footer {
     clear: both;
     width: 100vw;
-    margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 10px;
 }
 
 .footer-background {
     background-color: rgba(170, 170, 170, .5); /* the #aaa colour equivalent in rgba */
-    margin-top: 10px;  
+     
 }
 
 .upper-footer div {
@@ -329,11 +386,12 @@ footer {
 
 #navigation-footer a:hover {
     color: #aaa;
+    border-bottom: 1px solid #aaa
 }
 
 #navigation-footer .active {
     color: #f00;
-    font-weight: bold;
+    border-bottom: 1px solid #f00;
 }
 
 .footer-bottom {
@@ -364,6 +422,10 @@ footer h5 {
     .homepage-facilities-img-container img {
         width: 33%;
     }
+
+    .gallery-photos {
+    column-count: 3;
+    }
 }
 
 /* site responsiveness for mobiles */
@@ -371,6 +433,7 @@ footer h5 {
     #navigation {
         clear: left;
         float: left;
+        margin-left: 5px;
     }
 
     .hero-image-internal-container {
@@ -379,11 +442,16 @@ footer h5 {
         font-size: 80%;
     }
 
-    button {
+    .join-button {
         clear: left;
         float: left;
         font-size: 80%;
-        margin: auto;
+        margin: 0 auto;
+    }
+
+    .homepage h2, .membership-page h2, .classesschedule-page h2, .gallery-page h2, .contact-page h2 {
+        width: 100%;
+        text-align: center;
     }
 
     .hide-image-1 {
@@ -400,5 +468,21 @@ footer h5 {
 
     .homepage-facilities-img-container img {
         width: 50%;
+    }
+
+    .gallery-photos {
+    column-count: 2;
+    }
+
+    .upper-footer {
+    margin-left: 10px;
+    }
+
+    .social-media {
+    margin-left: 80px;
+    }
+
+.footer-bottom {
+    margin-left: 5px;
     }
 }

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body class="page-background">
     <header>
         <div class="hero-image" aria-labelledby="btflogo navigation hero-image-internal-container">
             <!-- ΒΤF "company" logo was created using favicon.io-->
@@ -31,9 +31,6 @@
                     <a href="gallery.html">Gallery</a>
                 </li>
                 <li>
-                    <a href="shop.html">Shop</a>
-                </li>
-                <li>
                     <a href="contact.html" class="active">Contact</a>
                 </li>
             </ul>
@@ -47,21 +44,35 @@
         </div>
     </header>
 
-<section class="homepage">
+<section class="contact-page">
+    <div id="contact-intro">
+        <p>For all your queries we have prepared a handy FAQs section below.<br>
+           If you would like to get in touch please fill in the form on this page and a member of our 
+           helpful <br>and knowledgeable staff will respond within 24 hours.
+        </p>
+        </div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Q: Is secure parking available in the vicinity?</p>
+        <p>A: Secure, and free for all members, private parking in front of Booterstown Fitness is available 
+           during opening hours
+        </p>
+        
     <h2>Query Form</h2>
-    <form action="" method="POST">
-        <label for="name">Name</label>
-        <input id="name" type="text" name="name" required> 
-        <label for="email">Email</label>
-        <input id="email" type="email" name="email" required/>
-        <label for="telephone-number">Telephone</label>
-        <input id="telephone-number" type="text" name="telephone-number" required/>
-        <label for="query">Message</label>
-        <textarea placeholder="Enter your query" rows="10" cols="30" id="query" name="query"></textarea>
-        <input id="consent" type="checkbox" name="consent" value="yes" required>
-        <label for="consent">I consent to have my data used as outlined in the Privacy Policy</label>
+    <form action="" method="POST" class="query-form">
+        <label for="name">Name *</label>
+        <input id="name" type="text" name="name" class="query-details" required> 
+        <label for="email">Email *</label>
+        <input id="email" type="email" name="email" class="query-details" required/>
+        <label for="telephone-number">Telephone *</label>
+        <input id="telephone-number" type="text" name="telephone-number" class="query-details" required/>
+        <label for="query">Message *</label>
+        <textarea placeholder="Enter your query" rows="10" cols="30" id="query" name="query" class="query-message"></textarea>
+        <input id="consent" type="checkbox" name="consent" value="yes" class="query-consent" required>
+        <label for="consent">I consent to have my data used as outlined in the <a href="assets/docs/private-policy.pdf"
+                            target="_blank" aria-label="go to our private policy (opens in a new tab)" 
+                            class="private-policy">Privacy Policy</a></label>
         <input type="submit" value="SEND" class="submit-button">
-        <input type="reset" value="Reset Form">
+        <input type="reset" value="Reset Form" class="submit-button">
 
     </form>
 </section>
@@ -109,9 +120,6 @@
                             </li>
                             <li>
                                 <a href="gallery.html">Gallery</a>
-                            </li>
-                            <li>
-                                <a href="shop.html">Shop</a>
                             </li>
                             <li>
                                 <a href="contact.html" class="active">Contact</a>
