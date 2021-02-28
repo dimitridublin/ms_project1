@@ -160,7 +160,7 @@ body {
     margin-left: 5vw;
     padding: 1vw;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -213,7 +213,7 @@ body {
     margin-right: 5vw;
     padding: 1vw;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -246,18 +246,18 @@ table {
 table th {
     border: 2px double black;
     text-align: center;
-    font-size: 130%;
+    font-size: 110%;
     color: #f00;
     background-color: #aaa;
-    width: 100px;
-    padding: 10px;
+    width: 80px;
+    padding: 20px;
 }
 
 table td {
     border: 2px double black;
     text-align: center;
-    font-size: 130%;
-    width: 50px;
+    font-size: 110%;
+    width: 80px;
     padding: 20px;
 }
 
