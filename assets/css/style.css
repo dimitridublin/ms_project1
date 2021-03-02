@@ -235,7 +235,6 @@ body {
     font-weight: bold;
 }
 
-
 /* classes schedule page table styling */
 table {
     border: 2px double black;
@@ -335,7 +334,7 @@ table td {
     color: #aaa;
 }
 
-.submit-button {
+.submit-button, .reset-button {
     font-weight: bold;
     font-size: 120%;
     color: #f00;
@@ -362,8 +361,7 @@ footer {
 }
 
 .footer-background {
-    background-color: rgba(170, 170, 170, .5); /* the #aaa colour equivalent in rgba */
-     
+    background-color: rgba(170, 170, 170, .5); /* the #aaa colour equivalent in rgba */  
 }
 
 .upper-footer div {
@@ -376,10 +374,8 @@ footer {
     margin-right: 2px;
 }
 
-
 .social-media {
     text-align: center;
-
 }
 
 .social-media li {
@@ -393,12 +389,10 @@ footer {
     color: #f00;
 }
 
-
 .lower-footer div {
     width: 49.5vw;
     display: inline-block;
     vertical-align: middle; 
-
 }
 
  /* footer navigation styling */
@@ -409,12 +403,11 @@ footer {
     letter-spacing: 2px;
     list-style-type: none;
     float: left;
- }
-
+}
 
  #navigation-footer ul {
      float: right;     
- }
+}
 
 #navigation-footer li {
     display: inline-block;
@@ -596,7 +589,18 @@ footer h5 {
     /* contact page styling */
     .query-form {
     width: 400px;
-}
+    }
+
+    .query-form div {
+    clear: left;
+    float: left;
+    margin-top: 10px;
+    }
+
+    .submit-button, .reset-button {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
     /* footer styling */
     .upper-footer {
@@ -611,5 +615,109 @@ footer h5 {
         clear: left;
         float: left;
         font-weight: bold;
+    }
+}
+
+/* site responsiveness for small screen mobiles */
+@media screen and (max-width: 600px) {
+    .hero-image-internal-container {
+        font-size: 70%;
+    }
+    #join-button {
+        font-size: 90%;
+        left: 28%;
+        margin: 0 auto;
+    }
+
+    /* homepage styling */
+    .homepage h2, .membership-page h2, .classesschedule-page h2, .gallery-page h2, .contact-page h2 {
+        text-align: left;
+        margin-right: 5px;
+    }
+
+    .homepage p, .membership-page p, .classesschedule-page p, .gallery-page p, .contact-page p {
+        margin-right: 5px;
+    }
+
+    .hide-image-1 {
+        display: none;
+    }
+
+    .hide-image-2 {
+        display: none;
+    }
+
+    .hide-image-3 {
+        display: none;
+    }
+
+    .homepage-facilities-img-container {
+        width: 100%
+    }
+
+    .homepage-facilities-img-container img {
+        width: 100%;
+    }
+
+    /* membership page styling */
+    #standard-membership {
+        margin-left: 5%;
+        height: 600px;
+    }
+
+    #gold-membership {
+        margin-right: 5%;
+        height: 600px;
+    }
+
+    .buynow-button {
+    bottom: 10px;
+    left: 1%;
+    font-size: 100%;
+    padding: 1px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 15%;
+    }
+
+    /* classes schedule page styling */
+    table th {
+    font-size: 37%;
+    padding: 1px;
+    margin-left: 0px;
+    }
+
+    table td {
+    font-size: 37%;
+    padding: 1px;
+    margin-left: 0px;
+    }
+
+    /* gallery page styling */
+    .gallery-photos {
+    column-count: 1;
+    }
+
+    /* contact page styling */
+    .query-form {
+    width: 300px;
+    }
+
+    .query-form div {
+    clear: left;
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    }
+
+    .submit-button, .reset-button {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* footer styling */
+    .social-media {
+    margin-left: 150px;
     }
 }
