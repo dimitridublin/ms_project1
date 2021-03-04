@@ -68,7 +68,9 @@ Because of the simplicity of the website automation of tests was not possible. M
 #### Credits
 ##### Content
 FAQs were inspired and/or copied from https://westwood.ie/members-faq/
+
 Private policy wording was adapted from http://www.formschool.ie/
+
 All images were reduced in size (“tinified”) without loss of quality using https://tinypng.com/ 
 
 ##### Media
@@ -78,5 +80,7 @@ Image credits:
 
 ##### Acknowledgments
 I would like to thank my mentor Akshat Garg for his useful tips and comments.
+
 I would also like to thank my class peers for their encouragement on Slack.
+
 And of course, thanks goes to my wife and children for keeping as quite as possible while "daddy was coding"!
