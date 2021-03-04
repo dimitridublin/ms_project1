@@ -55,8 +55,28 @@ Because of the simplicity of the website automation of tests was not possible. M
   Try to submit the form with all inputs valid and verified that form was looking to post the data (error page appeared as expected as function was not due to be developed during this project)
   Clicked on "Privacy Policy" and pdf with required info opened in a new tab as expected
   Clicked on the "reset form" button and observed all fields clearing up
-* Clicked on all social media icons on each page and they opened correctly in a new tab.
-* Successfully tested responsiveness for different screen sizes: desktop, tablet, mobile and small screen mobile (as i am using a laptop with a small screen i was not able to set up responsiveness/check such for extra-large screens). 
+* Clicked on all social media icons on each page and they opened correctly in a new tab
+* Successfully tested responsiveness for different screen sizes: desktop, tablet, mobile and small screen mobile (as i am using a laptop with a small screen i was not able to set up responsiveness/check such for extra-large screens). Page elements rearrange themselves according to the current browser screen width and site maintains consistency of design and information without elements overlapping
 * Page layout complied with original wireframe designs for different screen sizes. See respective [wireframe images pdf](assets/docs/wireframes.pdf)
 * The above tests were carried out on both Firefox and Chrome with no bugs/issues observed (used respective dev tools to check responsiveness for different screen sizes)
-* During testing no interesting bugs or problems worth reporting were found
+* During testing no interesting bugs or problems worth reporting were found. However, at the development stage an X-Frame-Options blocker plugin had to be installed on to Firefox as browser was preventing the embedded Google map iframe from loading on to the page
+* CSS coding was validated without any errors using the course prescribed CSS validator
+* HTML code errors correspond to the iframe code copied from Google Maps and hence this element of code was left unchanged. All other elements were successfully validated by the the course prescribed HTML validator
+
+#### Deployment
+
+#### Credits
+##### Content
+FAQs were inspired and/or copied from https://westwood.ie/members-faq/
+Private policy wording was adapted from http://www.formschool.ie/
+All images were reduced in size (“tinified”) without loss of quality using https://tinypng.com/ 
+
+##### Media
+Image credits:
+* All photos taken from Unsplash.com. The photographs used belong to Mor Shani, Cathy Pham, Taiki Ishikawa, Arthur Edelmans, Danielle Cerullo, George Pagan III, Sam Moqadam, Bruce Mars, Sriyoga Ashram, Jamie Ginsberg, Jordan Nix, Jan Laugesen, HUUM, Bence Balla-Schottner, Nelka, Marcelo Uva, and Asaal Meher.
+* Iframe copied from Google Maps
+
+##### Acknowledgments
+I would like to thank my mentor Akshat Garg for his useful tips and comments.
+I would also like to thank my class peers for their encouragement on Slack.
+And of course, thanks goes to my wife and children for keeping as quite as possible while "daddy was coding"!
