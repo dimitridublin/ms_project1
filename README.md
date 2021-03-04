@@ -50,11 +50,11 @@ Because of the simplicity of the website automation of tests was not possible. M
 * Clicked on each of the different photos on homepage and navigated to the gallery page as expected
 * Homepage photos and gallery photos respond to different screen sizes as expected, i.e. rows of four images get progressively reduced to rows of three, two and one image depending on the screen size. At this point, i would like to draw attention to the fact that two different methods were used to achieve this result (i.e. not displaying the relevant image(s) on the homepage and reducing the number of columns in the gallery page)
 * Query form on contact page:
-  Tried to submit the empty form and verified that an error message about the required fields appears
-  Tried to submit the form with an invalid email address and verified that a relevant error message appears
-  Try to submit the form with all inputs valid and verified that form was looking to post the data (error page appeared as expected as function was not due to be developed during this project)
-  Clicked on "Privacy Policy" and pdf with required info opened in a new tab as expected
-  Clicked on the "reset form" button and observed all fields clearing up
+  * Tried to submit the empty form and verified that an error message about the required fields appears
+  * Tried to submit the form with an invalid email address and verified that a relevant error message appears
+  * Try to submit the form with all inputs valid and verified that form was looking to post the data (error page appeared as expected as function was not due to be developed during this project)
+   * Clicked on "Privacy Policy" and pdf with required info opened in a new tab as expected
+   * Clicked on the "reset form" button and observed all fields clearing up
 * Clicked on all social media icons on each page and they opened correctly in a new tab
 * Successfully tested responsiveness for different screen sizes: desktop, tablet, mobile and small screen mobile (as i am using a laptop with a small screen i was not able to set up responsiveness/check such for extra-large screens). Page elements rearrange themselves according to the current browser screen width and site maintains consistency of design and information without elements overlapping
 * Page layout complied with original wireframe designs for different screen sizes. See respective [wireframe images pdf](assets/docs/wireframes.pdf)
