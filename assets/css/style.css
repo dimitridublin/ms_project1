@@ -95,15 +95,15 @@ body {
 
 /* Join Now button styling */
 #join-button {
-    height: 30px;
+    height: 20px;
     width: 150px;
     text-align: center;
     font-family: "Roboto", "Verdana", sans-serif;
-    letter-spacing: 4px;
-    padding: 5px;
+    letter-spacing: 5px;
+    padding: 2px;
     background-color: #aaa;
     position: absolute;
-    bottom: 5px;
+    bottom: 10px;
     left: 40%;
     right: 40%;
     margin: 0 auto;
