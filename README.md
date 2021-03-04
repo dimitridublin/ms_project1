@@ -83,4 +83,4 @@ I would like to thank my mentor Akshat Garg for his useful tips and comments.
 
 I would also like to thank my class peers for their encouragement on Slack.
 
-And of course, thanks goes to my wife and children for keeping as quite as possible while "daddy was coding"!
+And of course, thanks goes to my wife and children for keeping as quiet as possible while "daddy was coding"!
