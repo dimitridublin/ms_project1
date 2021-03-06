@@ -24,6 +24,7 @@ body {
   background-color: black;
   height: 350px;
   width: 100%;
+  margin-bottom: 30px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -32,27 +33,34 @@ body {
 
 /* btflogo styling */
 #btflogo {
-    margin-left: 5px;
+    margin-left: 10px;
     margin-top: 5px;
     float: left;
+}
+
+#btflogo img {
+    height: 100px;
+    width: 100px;
 }
 
 /* top navigation menu styling */
 #navigation {
     margin-right: 5px;
     margin-top: 5px;
-    font-size: 130%;
+    font-size: 120%;
     list-style-type: none;
     float: right;
 }
 
 #navigation ul {
      float: right;     
+     background-color: #ffffff;
 }
 
 #navigation li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     font-family: "Roboto", "Verdana", sans-serif;
     letter-spacing: 3px;
 }
@@ -60,16 +68,18 @@ body {
 #navigation a {
     text-decoration: none;
     color: #f00;
+    font-weight: bold;
 }
 
 #navigation a:hover {
-    color: #aaa;
-    border-bottom: 1px solid #aaa;
+    color: #000;
+    font-weight: bold;
 }
 
 #navigation .active {
-    color: #f00;
-    border-bottom: 1px solid #f00;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
 }
 
 /* hero-image-internal-container styling */
@@ -80,7 +90,7 @@ body {
     font-weight: bold;
     letter-spacing: 5px;
     text-align: center;
-    background-color: rgba(170, 170, 170, .8); /* the #aaa colour equivalent in rgba */
+    background-color: rgba(255, 255, 255, .8); /* the #ffffff colour equivalent in rgba */
     padding: 5px;
     position: absolute;
     bottom: 40px;
@@ -101,7 +111,7 @@ body {
     font-family: "Roboto", "Verdana", sans-serif;
     letter-spacing: 5px;
     padding: 2px;
-    background-color: #aaa;
+    background-color: #ffffff;
     position: absolute;
     bottom: 10px;
     left: 40%;
@@ -117,23 +127,28 @@ body {
 }
 
 #join-button a:hover {
-    color: #ffffff;
+    color: #000;
     font-weight: bold;
 }
 
 /* homepage styling */
+.homepage, .membership-page, .classesschedule-page, .gallery-page, .contact-page {
+    min-height: calc(100vh - 531px);
+}
+
 .homepage h2, .membership-page h2, .classesschedule-page h2, .gallery-page h2, .contact-page h2 {
     font-family: "Roboto", "Verdana", sans-serif;
     color: #f00;
-    margin-top: 15px;
+    text-align: center;
+    margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 5px; 
 }
 
-.homepage p, .membership-page p, .classesschedule-page p, .contact-page p {
+.homepage p, .contact-page p {
     margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
 }
 
 .homepage-facilities-img-container {
@@ -151,6 +166,9 @@ body {
 }
 
 /* membership page styling */
+.membership-page p, .classesschedule-page p {
+    text-align: center;
+}
 #standard-membership {
     border: 2px solid black;
     width: 510px;
@@ -164,8 +182,9 @@ body {
     position: relative;
 }
 
-#standard-membership h3 {
-    margin-left: 5px;
+#standard-membership h3, #gold-membership h3 {
+    text-align: center;
+    font-size: 200%;
     margin-bottom: 10px;
 }
 
@@ -186,7 +205,7 @@ body {
     font-weight: bold;
     font-size: 150%;
     color: #f00;
-    background-color: #aaa;
+    background-color: #ffffff;
     letter-spacing: 2px;
     width: 160px;
     border-radius: 5%;
@@ -199,7 +218,7 @@ body {
 }
 
 .buynow-button:hover {
-    color: #ffffff;
+    color: #000;
     font-weight: bold;
 }
 
@@ -217,11 +236,6 @@ body {
     position: relative;
 }
 
-#gold-membership h3 {
-    margin-left: 5px;
-    margin-bottom: 10px;
-}
-
 #pay-as-you-go {
     clear: both;
     margin: 0 auto;
@@ -230,7 +244,7 @@ body {
     padding: 2px;
     text-align: center;
     letter-spacing: 2px;
-    background-color: #aaa;
+    background-color: #ffffff;
     color: #f00;
     font-weight: bold;
 }
@@ -239,9 +253,9 @@ body {
 table {
     border: 2px double black;
     margin-top: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 99%;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table th {
@@ -249,7 +263,7 @@ table th {
     text-align: center;
     font-size: 110%;
     color: #f00;
-    background-color: #aaa;
+    background-color: #fff;
     width: 80px;
     padding: 20px;
 }
@@ -273,39 +287,65 @@ table td {
 .gallery-photos img {
     width: 100%;
     height: 250px;
+    margin-bottom: 10px;
 }
 
 /* contact-page styling */
-.contact-page {
-  width: 100%;
-}
-
 #contact-intro {
     clear: both;
-    margin: 0 auto;
     width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 2px;
-    text-align: center;
-    letter-spacing: 2px;
     color: #f00;
-    background-color: #aaa;
+    background-color: #ffffff;
     font-weight: bold;
 }
 
-.contact-faq {
+#contact-intro p {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#contact-page-faq-section {
+    clear: both;
+    width: 84vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+#contact-page-faq-section h2 {
+    text-align: center;
+}
+
+#contact-page-faq-section p, #contact-map p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-faq-question {
     font-weight: bold;
     margin-top: 10px;
+    text-align: center;
 }
 
 /* contact-page query form styling */
+#contact-page-queryform {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
 .query-form {
     font-family: "Lato", "Verdana", sans-serif;
     color: #f00;
     font-weight: bold;
-    width: 500px;
-    margin-left: 5px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .query-details {
@@ -331,39 +371,47 @@ table td {
 }
 
 .private-policy:hover {
-    color: #aaa;
+    color: #000;
 }
 
 .submit-button, .reset-button {
     font-weight: bold;
     font-size: 120%;
     color: #f00;
-    background-color: #aaa;
+    background-color: #fff;
     letter-spacing: 2px;
     width: 150px;
     padding: 5px;
-    margin-right: 20px;
-    margin-left: 50px;
+    margin-right: 50px;
+    margin-left: 60px;
     margin-bottom: 20px;
 }
 
-.submit-button:hover {
-    color: #ffffff;
+.submit-button:hover, .reset-button:hover {
+    color: #000;
     font-weight: bold;
+}
+
+/* google map div styling */
+#contact-map {
+    clear: both;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
 
 /* footer styling */
 footer {
     clear: both;
     width: 100vw;
-    margin-bottom: 10px;
+    margin-top: 10px;
     padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
 }
 
-.footer-background {
-    background-color: rgba(170, 170, 170, .5); /* the #aaa colour equivalent in rgba */  
-}
-
+/* upper footer styling */
 .upper-footer div {
     display: inline-block;
     width: 33vw;
@@ -374,10 +422,7 @@ footer {
     margin-right: 2px;
 }
 
-.social-media {
-    text-align: center;
-}
-
+/* social media icons styling */
 .social-media li {
     display: inline;
 }
@@ -389,51 +434,17 @@ footer {
     color: #f00;
 }
 
+.social-media i:hover {
+    color: #000;
+}
+
+/* lower footer styling */
 .lower-footer div {
-    width: 49.5vw;
-    display: inline-block;
+    width: 50vw;
     vertical-align: middle; 
 }
 
- /* footer navigation styling */
- #navigation-footer {
-    margin-left: 2vw;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    letter-spacing: 2px;
-    list-style-type: none;
-    float: left;
-}
-
- #navigation-footer ul {
-     float: right;     
-}
-
-#navigation-footer li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-#navigation-footer a {
-    text-decoration: none;
-    color: #f00;
-}
-
-#navigation-footer a:hover {
-    color: #aaa;
-    border-bottom: 1px solid #aaa
-}
-
-#navigation-footer .active {
-    color: #f00;
-    border-bottom: 1px solid #f00;
-}
-
-.footer-bottom {
-    margin-bottom: 10px;
-}
-
-footer h5 {
+.lower-footer h5 {
     color:#f00;
     text-align: center;
     font-weight: normal;
