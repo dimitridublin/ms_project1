@@ -8,8 +8,7 @@
     border: 0;
 }
 
-/* body styling, Roboto font to be used for top navigation and headings, Lato font to be used for footer navigation
-and paragraph text */
+/* body styling, Roboto font to be used for navigation and headings, Lato font to be used for paragraph text */
 body {
     font-family: "Lato", "Verdana", sans-serif;  
     background-color: #eee6ff;
@@ -43,7 +42,7 @@ body {
     width: 100px;
 }
 
-/* top navigation menu styling */
+/* navigation menu styling */
 #navigation {
     margin-right: 5px;
     margin-top: 5px;
@@ -90,7 +89,8 @@ body {
     font-weight: bold;
     letter-spacing: 5px;
     text-align: center;
-    background-color: rgba(255, 255, 255, .8); /* the #ffffff colour equivalent in rgba */
+    /* the #ffffff colour equivalent in rgba below, obtained using the respective tool in http://hex2rgba.devoth.com */
+    background-color: rgba(255, 255, 255, .8);
     padding: 5px;
     position: absolute;
     bottom: 40px;
@@ -132,6 +132,7 @@ body {
 }
 
 /* homepage styling */
+/* min-height method below copied from https://programmer.help/blogs/eight-ways-to-fix-the-bottom-of-css-page.html */
 .homepage, .membership-page, .classesschedule-page, .gallery-page, .contact-page {
     min-height: calc(100vh - 531px);
 }
@@ -140,7 +141,7 @@ body {
     font-family: "Roboto", "Verdana", sans-serif;
     color: #f00;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -450,20 +451,11 @@ footer {
     font-weight: normal;
 }
 
-/* site responsiveness for tablets */
+/* site responsiveness for tablets, max-width value as advised in "Love Running" course tutorial */
 @media screen and (max-width: 1200px) {
-    /* hero-image container styling */
-    .hero-image {
-        height: 400px;
-    }
-
     /* homepage styling */
     .hide-image-1 {
         display: none;
-    }
-
-    .homepage-facilities-img-container {
-        width: 100%
     }
 
     .homepage-facilities-img-container img {
@@ -499,36 +491,43 @@ footer {
     font-size: 90%;
     }
 
+    /* contact-page styling */
+    .submit-button, .reset-button {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    }
+
     /* footer styling */
     .upper-footer div {
         width: 32vw;
-    }
-
-    #navigation-footer {
-        letter-spacing: 1px;
-        margin-right:2px;
-        margin-left: 2px;
+        margin-bottom: 10px;
     }
 }
 
-/* site responsiveness for mobiles */
+/* site responsiveness for mobiles, max-width value as advised in "Love Running" course tutorial */
 @media screen and (max-width: 943px) {
     /* hero-image container styling */
-    .hero-image {
-        height: 500px;
-    }
-    
-    #navigation {
-        clear: left;
-        float: left;
-        margin-left: 5px;
+    #btflogo {
+        clear: both;
+        float: none;
+        width: 19vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 80px;
     }
 
-    #navigation li {
-        clear: left;
-        float: left;
-        margin-left: 5px;
-        font-weight: bold;
+    #btflogo img {
+        margin-top: 5px;
+    }
+    #navigation {
+        font-size: 100%;
+        clear: both;
+        float: none;
+        padding: 5px;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero-image-internal-container {
@@ -539,7 +538,7 @@ footer {
 
     #join-button {
         font-size: 90%;
-        left: 34%;
+        left: 37%;
         margin: 0 auto;
     }
 
@@ -620,12 +619,6 @@ footer {
 
     .social-media {
     margin-left: 80px;
-    }
-
-    #navigation-footer li {
-        clear: left;
-        float: left;
-        font-weight: bold;
     }
 }
 
