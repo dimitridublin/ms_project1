@@ -60,6 +60,8 @@ Automation of tests was not possible on this project. Manual testing confirmed c
 * Clicked on company logo on each web page and navigated directly to the homepage as expected
 * Clicked on the "join now" button on each page and navigated directly to the membership page as expected
 * Navigation links worked as expected when clicked on each web page moving user directly to the respective web page
+* Navigation links and all buttons/button type items changed appearance when hovered over as expected
+* Active navigation links were indicated by their changed appearance as planned
 * Clicked on each of the different photos on homepage and navigated to the gallery page as expected
 * Homepage photos and gallery photos respond to different screen sizes as expected, i.e. rows of four images get progressively reduced to rows of three, two and one image depending on the screen size. At this point, i would like to draw attention to the fact that two different methods were used to achieve this result (i.e. the first by removing from the display the relevant image(s) on the homepage and the second through reducing the number of columns in the gallery page)
 * Query form on contact page:
