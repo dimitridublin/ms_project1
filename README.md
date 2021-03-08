@@ -72,7 +72,11 @@ Automation of tests was not possible on this project. Manual testing confirmed c
 * Successfully tested responsiveness for different screen sizes: desktop, tablet, mobile and small screen mobile (as i am using a laptop with a small screen i was not able to set up responsiveness/check such for extra-large screens). Page elements rearrange themselves according to the current browser screen width and site maintains consistency of design and information without any elements overlapping on screen
 * Page layout largely complied with original wireframe designs for different screen sizes. See respective [wireframe images pdf](assets/docs/wireframes.pdf)
 * The above tests were carried out on both Firefox and Chrome browsers to also verify browser compatibility. No bugs/issues observed (used respective dev tools i.e. responsive design mode on Firefox and toggle device toolbar/Lighthouse on Chrome, to check the responsiveness for different screen sizes)
-* Used Lighthouse on Chrome to assess website's performance
+* Ran the Lighthouse report on Chrome, with the following results:
+  * Performance: 95
+  * Accessibility: 95
+  * Best practices: 79
+  * SEO: 96
 * Accesibility of colour combinations used was verified using the respective color tool from https://material.io/resources/color/
 * During testing no interesting bugs or problems worth reporting were found. However, at the development stage an X-Frame-Options blocker plugin had to be installed on to Firefox as browser was preventing the embedded Google map iframe from loading on to the page
 * The only HTML code errors when code is being validated correspond to the iframe code copied from Google Maps. As this was directly imported code from Google and iframe element performed as expected these error messages were not addressed and code was not amended. All other elements were successfully validated by the the course prescribed HTML validator (https://validator.w3.org/)
