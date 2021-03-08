@@ -110,8 +110,6 @@ body {
     text-align: center;
     font-family: "Roboto", "Verdana", sans-serif;
     letter-spacing: 5px;
-    padding: 2px;
-    background-color: #ffffff;
     position: absolute;
     bottom: 10px;
     left: 40%;
@@ -122,17 +120,21 @@ body {
 #join-button a {
     text-decoration: none;
     color: #f00;
+    padding: 3px;
+    background-color: #ffffff;
+    border: 1px solid #000;
     font-weight: bold;
     font-size: 120%;
 }
 
 #join-button a:hover {
-    color: #000;
+    color: #fff;
+    background-color: #000;
     font-weight: bold;
 }
 
 /* homepage styling */
-/* min-height method below copied from https://programmer.help/blogs/eight-ways-to-fix-the-bottom-of-css-page.html */
+/* min-height calc method below copied from https://programmer.help/blogs/eight-ways-to-fix-the-bottom-of-css-page.html */
 .homepage, .membership-page, .classesschedule-page, .gallery-page, .contact-page {
     min-height: calc(100vh - 531px);
 }
@@ -216,10 +218,12 @@ body {
     position: absolute;
     bottom: 20px;
     left: 175px;
+    border: 1px solid #000;
 }
 
 .buynow-button:hover {
-    color: #000;
+    color: #fff;
+    background-color: #000;
     font-weight: bold;
 }
 
@@ -386,20 +390,20 @@ table td {
     margin-right: 50px;
     margin-left: 60px;
     margin-bottom: 20px;
+    border: 1px solid #000;
 }
 
 .submit-button:hover, .reset-button:hover {
-    color: #000;
+    color: #fff;
+    background-color: #000;
     font-weight: bold;
 }
 
 /* google map div styling */
 #contact-map {
     clear: both;
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 /* footer styling */
@@ -577,17 +581,15 @@ footer {
 
     .buynow-button {
     bottom: 10px;
-    left: 7%;
+    left: 17%;
     }
 
     /* classes schedule page styling */
     table th {
-    font-size: 50%;
     padding: 1px;
     }
 
     table td {
-    font-size: 50%;
     padding: 1px;
     }
 
@@ -595,16 +597,10 @@ footer {
     .gallery-photos {
     column-count: 2;
     }
-
-    /* contact page styling */
+    
+     /* contact page styling */
     .query-form {
     width: 400px;
-    }
-
-    .query-form div {
-    clear: left;
-    float: left;
-    margin-top: 10px;
     }
 
     .submit-button, .reset-button {
@@ -613,36 +609,47 @@ footer {
     }
 
     /* footer styling */
-    .upper-footer {
-    margin-left: 10px;
-    }
-
-    .social-media {
-    margin-left: 80px;
+    .upper-footer div, .lower-footer div {
+        clear: both;
+        float: none;
+        display: block;
+        text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
     }
 }
 
 /* site responsiveness for small screen mobiles */
 @media screen and (max-width: 600px) {
+    .hero-image {
+        height: 450px;
+    }
+
+    #btflogo {
+        width: 33vw;
+        margin-bottom: 80px;
+    }
+
+    #navigation li {
+        display: block;
+        width: 80vw;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
     .hero-image-internal-container {
         font-size: 70%;
     }
+
     #join-button {
         font-size: 90%;
-        left: 28%;
+        left: 27%;
         margin: 0 auto;
     }
 
     /* homepage styling */
-    .homepage h2, .membership-page h2, .classesschedule-page h2, .gallery-page h2, .contact-page h2 {
-        text-align: left;
-        margin-right: 5px;
-    }
-
-    .homepage p, .membership-page p, .classesschedule-page p, .gallery-page p, .contact-page p {
-        margin-right: 5px;
-    }
-
     .hide-image-1 {
         display: none;
     }
@@ -665,12 +672,21 @@ footer {
 
     /* membership page styling */
     #standard-membership {
-        margin-left: 5%;
+        margin-left: 3%;
         height: 600px;
     }
 
+    #standard-membership h3 {
+        font-size: 140%;
+        margin-bottom: 18px;
+    }
+
+    #gold-membership h3 {
+        font-size: 180%;
+    }
+
     #gold-membership {
-        margin-right: 5%;
+        margin-right: 3%;
         height: 600px;
     }
 
@@ -687,15 +703,11 @@ footer {
 
     /* classes schedule page styling */
     table th {
-    font-size: 37%;
-    padding: 1px;
-    margin-left: 0px;
+    font-size: 45%;
     }
 
     table td {
-    font-size: 37%;
-    padding: 1px;
-    margin-left: 0px;
+    font-size: 45%;
     }
 
     /* gallery page styling */
@@ -705,23 +717,12 @@ footer {
 
     /* contact page styling */
     .query-form {
-    width: 300px;
-    }
-
-    .query-form div {
-    clear: left;
-    float: left;
-    margin-top: 20px;
-    margin-left: 40px;
+    width: 250px;
     }
 
     .submit-button, .reset-button {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    /* footer styling */
-    .social-media {
-    margin-left: 150px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
     }
 }
