@@ -65,7 +65,7 @@ Automation of tests was not possible on this project. Manual testing confirmed c
 * Query form on contact page:
   * Tried to submit the form without all fields completed and verified that an error message regarding each missing field appears
   * Tried to submit the form with an invalid email address and verified that a relevant error message appears
-  * Try to submit the form with all inputs valid and verified that form was looking to post the data (error page appeared as expected as function was not due to be developed during this project)
+  * Try to submit the form with all inputs valid and verified that form was looking to post the data ("405 Not Allowed" error page appeared as expected as form submission function was not due to be developed during this project)
    * Clicked on "Privacy Policy" and pdf with required info opened in a new tab as expected
    * Clicked on the "reset form" button and observed all fields clearing up
 * Clicked on each social media icon on each page and they opened correctly in a new tab
