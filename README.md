@@ -86,6 +86,7 @@ Automation of tests was not possible on this project. Manual testing confirmed c
 * Elements within the hero image (i.e. company logo, navigation menu, internal image container and join button) do not fully align in the centre of the screen for some mobile screen sizes
 * "Buy now" buttons on membership page may appear slightly misaligned on some mobile screen sizes
 * On homepage and under facilities, when the number of images is reduced to one that image may appear slightly stretched on some mobile screen sizes
+* The only HTML code errors when code is being validated correspond to the iframe code copied from Google Maps. As this was directly imported code from Google and iframe element performed as expected these error messages were not addressed and code was not amended
 * At the development stage, an X-Frame-Options blocker plugin had to be installed on to Firefox as browser was preventing the embedded Google map iframe from loading on to the page
 
 #### Deployment
