@@ -2,7 +2,9 @@
 ## Project: MS Project 1 - Build a Gym Website (March 2021)
 
 ### Booterstown Fitness - Your local fitness partners in South County Dublin
-For my first Milestone Project I chose to build a website for an imaginary gym and fitness club, based in Booterstown, Co Dublin (i.e. project example idea 2 in the course assessment handbook). 
+[View the live website here](https://dimitridublin.github.io/ms_project1/)
+
+For my first Milestone Project I chose to build a five page website for an imaginary gym and fitness club, based in Booterstown, Co Dublin (i.e. project example idea 2 in the course assessment handbook). Roboto fonts were used for navigation and headings, Lato fonts were used for paragraph text. Verdana and sans serif fonts were also chosen as fallback in case Google fonts do not load. The website has been designed to be responsive for desktop, tablet, mobile and small screen mobile.
 
 #### User Stories
 As a prospective client I want to find out more about this establishment: its location, its opening hours, its membership options, its classes, its prices,
@@ -35,17 +37,18 @@ As the site owner I want to attract new members by providing information that wo
 #### Technologies Used
 * HTML
 * CSS
-* Google fonts (https://fonts.google.com/)
-* Awesome fonts (https://fontawesome.com/)
-* Favicon (https://favicon.io/)
-* Hex2rgba was used to convert hex values to rgba (http://hex2rgba.devoth.com/)
-* Material Design's colour tool was used to assess the accesibility of colour combinations used (https://material.io/resources/color/)
-* Online HTML validator (https://validator.w3.org/)
-* Online CSS validator (https://jigsaw.w3.org/css-validator/)
-* All images were reduced in size (“tinified”) without loss of quality using https://tinypng.com/
-* Wireframes were created using Balsamiq Wireframes (software downloaded from https://balsamiq.com/wireframes/desktop/)
+* [Google fonts](https://fonts.google.com/)
+* [Awesome fonts](https://fontawesome.com/)
+* [Favicon](https://favicon.io/)
+* Hex2rgba was used to [convert hex values to rgba](http://hex2rgba.devoth.com/)
+* [Material Design's colour tool](https://material.io/resources/color/) was used to assess the accesibility of colour combinations used
+* [Github](https://github.com/) and [Gitpod](https://gitpod.io/) were used for website development and version storage
+* [Online HTML validator](https://validator.w3.org/)
+* [Online CSS validator](https://jigsaw.w3.org/css-validator/)
+* All images were reduced in size (“tinified”) without loss of quality using [tinypng](https://tinypng.com/)
+* Wireframes were created using [Balsamiq Wireframes](https://balsamiq.com/wireframes/desktop/)
 
-As this is the very first website i have ever developed I chose not to utilise any external frameworks, libraries or other tools as part of my coding (with the exception of creating the company logo on favicon.io, importing the Google fonts Roboto and Lato as well as importing the awesomefonts v5.14.0 stylesheet for the membership page's trophy images and for the social media icons in the footer). This decision was made in order to:
+As this is the very first website i have ever developed I chose not to utilise any external frameworks, libraries or other tools as part of my coding with the exception of creating the company logo on favicon.io, importing the Google fonts Roboto and Lato as well as importing the awesomefonts v5.14.0 stylesheet for the membership page's trophy images and for the social media icons in the footer. This decision was made in order to:
   * Showcase my ability to develop a website using only HTML and CSS and without external aids (e.g. Bootstrap, etc.)
   * Allow me to devise original code for ms-project 2 onwards without needing to constantly cross check if chunks of code had already been used in ms-project 1 (as i expect/plan to extensively use Bootstrap in future ms projects)
   * Minimise any risk of appearing to plagiarise external chunks of code
@@ -72,16 +75,21 @@ Automation of tests was not possible on this project. Manual testing confirmed c
    * Clicked on the "reset form" button and observed all fields clearing up
 * Clicked on each social media icon on each page and they opened correctly in a new tab
 * Successfully tested responsiveness for different screen sizes: desktop, tablet, mobile and small screen mobile (as i am using a laptop with a small screen i was not able to set up responsiveness/check such for extra-large screens). Page elements rearrange themselves according to the current browser screen width and site maintains consistency of design and information without any elements overlapping on screen
-* Page layout largely complied with original wireframe designs for different screen sizes. Wireframes created for desktop, tablet, mobile and small screen mobile (as per site's responsiveness set up). See respective [wireframe images pdf](assets/docs/wireframes.pdf) (20 frames in total covering the four designs).
-* The above tests were carried out on both Firefox and Chrome browsers to also verify browser compatibility. No bugs/issues observed (used respective dev tools i.e. responsive design mode on Firefox and toggle device toolbar/Lighthouse on Chrome, to check the responsiveness for different screen sizes)
-* Ran the Lighthouse report on Chrome, with the following results: Performance: 95, Accessibility: 95, Best practices: 79, SEO: 96. Details of Lighthouse report confirmed that any issues identified were minor and not significantly affecting overall user experience or website performance
+* Page layout largely complied with original wireframe designs for different screen sizes as planned. Wireframes created for desktop, tablet, mobile and small screen mobile (as per site's responsiveness set up). See respective [wireframe images pdf](assets/docs/wireframes.pdf) (20 frames in total covering the four designs).
+* The above tests were carried out on Firefox and Chrome browsers to also verify browser compatibility (used respective dev tools i.e. responsive design mode on Firefox and toggle device toolbar/Lighthouse on Chrome, to check the responsiveness for different screen sizes)
+* Ran the Lighthouse report on Chrome, with the following results: Performance: 95, Accessibility: 98, Best practices: 87, SEO: 96. Details of Lighthouse report confirmed that any issues identified were minor and not significantly affecting overall user experience or website performance
 * Accesibility of colour combinations used was verified using the respective color tool from https://material.io/resources/color/
-* During testing no interesting bugs or problems worth reporting were found. However, at the development stage an X-Frame-Options blocker plugin had to be installed on to Firefox as browser was preventing the embedded Google map iframe from loading on to the page
-* The only HTML code errors when code is being validated correspond to the iframe code copied from Google Maps. As this was directly imported code from Google and iframe element performed as expected these error messages were not addressed and code was not amended. All other elements were successfully validated by the the course prescribed HTML validator (https://validator.w3.org/)
-* CSS coding was validated without any errors using the course prescribed CSS validator (https://jigsaw.w3.org/css-validator/)
+* The only HTML code errors when code is being validated correspond to the iframe code copied from Google Maps. As this was directly imported code from Google and iframe element performed as expected these error messages were not addressed and code was not amended. All other elements were successfully validated by the the course prescribed [HTML validator](https://validator.w3.org/)
+* CSS coding was validated without any errors using the course prescribed [CSS validator](https://jigsaw.w3.org/css-validator/)
+
+##### Interesting bugs or problems worth reporting
+* Elements within the hero image (i.e. company logo, navigation menu, internal image container and join button) do not fully align in the centre of the screen for some mobile screen sizes
+* "Buy now" buttons on membership page may appear slightly misaligned on some mobile screen sizes
+* On homepage and under facilities, when the number of images is reduced to one that image may appear slightly stretched on some mobile screen sizes
+* At the development stage, an X-Frame-Options blocker plugin had to be installed on to Firefox as browser was preventing the embedded Google map iframe from loading on to the page
 
 #### Deployment
-* Logged into my github account and from the project page (https://github.com/dimitridublin/ms_project1) I clicked on settings and scrolled down to "GitHub Pages"
+* Logged into my github account and from the [project page](https://github.com/dimitridublin/ms_project1) I clicked on settings and scrolled down to "GitHub Pages"
 * Under "Source" I changed the default "none" to "master" so that my site's deployed code feeds from the my project's master branch 
 * I saved the above change and my site was published at https://dimitridublin.github.io/ms_project1/
 
@@ -98,6 +106,8 @@ Image credits:
 
 ##### Acknowledgments
 I would like to thank my mentor Akshat Garg for his useful tips and comments.
+
+Many thanks to tutor Igor for resolving my github username issue and adding me to the unlimited team on gitpod.
 
 I would also like to thank my class peers for their encouragement on the respective Slack channels.
 
