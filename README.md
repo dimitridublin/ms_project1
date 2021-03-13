@@ -6,6 +6,8 @@
 
 For my first Milestone Project I chose to build a five page website for an imaginary gym and fitness club, based in Booterstown, Co Dublin (i.e. project example idea 2 in the course assessment handbook). Roboto fonts were used for navigation and headings, Lato fonts were used for paragraph text. Verdana and sans serif fonts were also chosen as fallback in case Google fonts do not load. The website has been designed to be responsive for desktop, tablet, mobile and small screen mobile.
 
+![image of website on different screen sizes](assets/images/responsive-design-readme.jpg)
+
 #### User Stories
 As a prospective client I want to find out more about this establishment: its location, its opening hours, its membership options, its classes, its prices,
 its parking facilities and I would also like to view photos from the club to get an indication of its facilities' range and quality. This would help me decide whether this gym offers good value for money, covers my work-out needs and whether it suits me to commit to a long-term membership. Easy to access links of the establishment's social media pages would also be welcome as they can provide additional info on the above.
